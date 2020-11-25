@@ -16,3 +16,8 @@ gem 'json'
 gem 'activerecord'
 gem 'sinatra-activerecord'
 gem 'sqlite3'
+
+gem 'mysql2'
+gem 'rake'
+gem 'pry'
+gem 'bcrypt'

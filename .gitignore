@@ -1,2 +1,6 @@
-resourcce/
-iso/
+database.yml
+error.log
+Gemfile.lock
+*.iso
+*.img
+*.cfg
