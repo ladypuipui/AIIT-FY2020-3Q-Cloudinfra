@@ -1,0 +1,4 @@
+database.yml
+*.iso
+*.img
+*.cfg

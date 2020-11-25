@@ -1,0 +1,35 @@
+<p><%= @msg %></p>  
+<p>
+◆Virtual host list
+<p><pre><%= @list %></pre></p>  
+<p>
+◆IPaddress list
+<pre><%= @iplist %></pre></p>  
+
+<p>
+<b>How to use</b><br>
+</p>
+<p>
+1.create new vh<br>
+  <p>
+    <a href="/create/">create</a>
+  </p>
+
+</p>
+<p>
+2.start vh<br>
+localhost:4567/start/${Name}
+</p>
+<p>
+3.stop vh<br>
+3-1.normal stop<br>
+localhost:4567/stop/${Name}<br>
+3-2.force stop<br>
+localhost:4567/forcestop/${Name}<br>
+</p>
+<p>
+4.delete vh<br>
+#### Worning ! All resources of the corresponding VH will be deleted ! ####<br>
+localhost:4567/delete/${Name}<br>
+</p>
+

@@ -1,0 +1,35 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <p>
+    <a href="about">VM作成</a>
+  </p>
+  <form action="confirm" method="POST">
+    <div>
+      name:<input type="text" name="name" value="">
+    </div>
+    <div>
+      vcpu:<input type="text" name="vcpu" value="">
+    </div>
+    <div>
+      mem:<input type="text" name="mem" value="">
+    </div>
+    <div>
+      disk:<input type="text" name="disk" value="">
+    </div>
+    <div>
+      sshkey:<input type="text" name="key" value="">
+    </div>
+    <div>
+      OS:
+      <input type="radio" name="os" value="CentOS7">CentOS7
+      <input type="radio" name="os" value="ubuntu1804">Ubuntu18.04 coming soon!!!!
+    </div>
+    <div>
+      <input type="submit" value="作成！">
+    </div>
+  </form>
+</body>
+</html>
