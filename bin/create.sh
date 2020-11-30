@@ -4,22 +4,15 @@ MSG=`bin/resourcecheck.sh`
 . ./env.config 
 
 if [ $MSG = 1 ]; then
- echo "OK"
-
- else
- echo "create instance faild" >> error.log
- exit1 
-
+        echo "OK"
+    else
+        echo "create instance faild" >> error.log
+        exit1 
 fi
 
 mkdir  ./resource/$NAME
 chmod 2777 ./resource/$NAME
-#cp ./config/keypair.tf ./resource/$NAME
 cd ./resource/$NAME
-#
-#
-#/usr/local/bin/terraform init && /usr/local/bin/terraform plan
-#/usr/local/bin/terraform apply -auto-approve
 KEYNAME=`cat ../key/$KEY/$KEY.pub`
 
 
@@ -68,10 +61,9 @@ systemctl restart sshd
 EOS
 
 if [ $OS = CentOS7 ]; then
- variant=centos7.0
-
+    variant=centos7.0
  else
- variant=ubuntu18.04
+    variant=ubuntu18.04
 fi
 
 
