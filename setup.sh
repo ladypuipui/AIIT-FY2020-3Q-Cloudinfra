@@ -1,5 +1,6 @@
 #!/bin/bash
-DBNAME=$1
+echo "Please enter the name you want to give to the DB name‼"
+read DBNAME
 
 curl -sS https://downloads.mariadb.com/MariaDB/mariadb_repo_setup | sudo bash
 yum -y install MariaDB-server MariaDB-client MariaDB-devel
